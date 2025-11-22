@@ -11,10 +11,9 @@ producer = Producer(Producer_config)
 
 def delivery_report(err, msg):
     if err:
-        print(f"Message delivery failed: {err}")
+        print(f"❎Message delivery failed: {err}")
     else:
-        print(f"Message delivered to {msg.topic()} [{msg.partition()}] at offset {msg.offset()}")
-        print(f"Message delivered successfully: {msg.value().decode('utf-8')}"  
+        print(f"🚚Message delivered successfully: {msg.value().decode('utf-8')}"  
               
               
 )

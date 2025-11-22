@@ -19,7 +19,7 @@ try:
             continue
 
         order = json.loads(msg.value().decode('utf-8'))
-        print(f"Received order: {order}") 
+        print(f"📨Received order: {order}") 
 except KeyboardInterrupt:
     pass
 finally:
